@@ -10,6 +10,7 @@ $wgExtensionCredits['parserhook'][] = array(
 );
 
 $wgExtensionMessagesFiles['MobileDetect'] = __DIR__ . '/MobileDetect.i18n.php';
+$wgMessagesDirs['MobileDetect'] = __DIR__ . '/i18n';
 
 $wgAutoloadClasses['MobileDetect'] = __DIR__ . '/MobileDetect.body.php';
 

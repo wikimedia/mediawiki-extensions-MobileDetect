@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Luis Felipe Schenone"
+		]
+	},
+	"mobiledetect-desc": "Detects mobile devices and allows to control the content visible in each case with the &lt;nomobile&gt; and &lt;mobileonly&gt; tags"
+}

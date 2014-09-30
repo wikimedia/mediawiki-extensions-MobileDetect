@@ -10,7 +10,7 @@ class MobileDetect {
 
 	public static function nomobile( $input, array $args, Parser $parser, PPFrame $frame ) {
 		if ( self::isMobile() ) {
-			return '';			
+			return '';
 		}
 		return $parser->recursiveTagParse( $input );
 	}

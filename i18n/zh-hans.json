@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Liuxinyu970226"
+		]
+	},
+	"mobiledetect-desc": "检测移动设备并允许控制在不同的&lt;nomobile&gt;和&lt;mobileonly&gt;标签情况下内容可见性"
+}

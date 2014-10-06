@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gomoko"
+		]
+	},
+	"mobiledetect-desc": "Détecte les appareils mobiles et permet de contrôler le contenu visible dans chaque cas avec les balises &lt;nomobile&gt; et &lt;mobileonly&gt;"
+}

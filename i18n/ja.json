@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Shirayuki"
+		]
+	},
+	"mobiledetect-desc": "携帯機器を検出し、それぞれの機器に表示するコンテンツを &lt;nomobile&gt; タグや &lt;mobileonly&gt; タグで制御できるようにする"
+}

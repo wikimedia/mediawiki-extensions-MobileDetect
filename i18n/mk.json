@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"mobiledetect-desc": "Наоѓа мобилни уреди и овозможува контрола врз видливата содржина во секој случај со ознаките &lt;nomobile&gt; и &lt;mobileonly&gt;"
+}

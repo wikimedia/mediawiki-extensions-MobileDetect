@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Luis Felipe Schenone"
+			"Luis Felipe Schenone",
+			"Fitoschido"
 		]
 	},
-	"mobiledetect-desc": "Detecta dispositivos móbiles y permite controlar el contenido visible en cada caso con las etiquetas &lt;nomobile&gt; y &lt;mobileonly&gt;"
+	"mobiledetect-desc": "Detecta dispositivos móviles y permite controlar el contenido que es visible en cada caso con las etiquetas &lt;nomobile&gt; y &lt;mobileonly&gt;"
 }

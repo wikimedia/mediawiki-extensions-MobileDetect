@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Metalhead64"
+		]
+	},
+	"mobiledetect-desc": "Erkennt mobile Geräte und erlaubt die Kontrolle des sichtbaren Inhalts in jedem Fall mit den Tags &lt;nomobile&gt; und &lt;mobileonly&gt;"
+}

@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jopparn"
+		]
+	},
+	"mobiledetect-desc": "Upptäcker mobila enheter och gör det möjligt att kontrollera det synliga innehållet vid varje enskilt tillfälle med &lt;nomobile&gt;- och &lt;mobileonly&gt;-taggar"
+}

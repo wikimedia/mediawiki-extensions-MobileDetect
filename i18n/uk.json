@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Olvin"
+		]
+	},
+	"mobiledetect-desc": "Визначає мобільні пристрої та дозволяє керувати вмістом, який буде показано, за допомогою тегів &lt;nomobile&gt; і &lt;mobileonly&gt;"
+}

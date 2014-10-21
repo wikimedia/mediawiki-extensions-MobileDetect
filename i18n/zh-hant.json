@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"LNDDYL"
+		]
+	},
+	"mobiledetect-desc": "檢測手機裝置並允許使用 &lt;nomobile&gt; 與 &lt;mobileonly&gt; 標籤控制在不同情況下的顯示內容"
+}

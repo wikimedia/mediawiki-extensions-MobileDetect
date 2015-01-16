@@ -3,7 +3,7 @@
 $wgExtensionCredits['parserhook'][] = array(
 	'name' => 'MobileDetect',
 	'version' => 2.0,
-	'license-name' => 'GPLv2+',
+	'license-name' => 'GPL-2.0+',
 	'descriptionmsg' => 'mobiledetect-desc',
 	'author' => array( 'Matthew Tran', 'Luis Felipe Schenone' ),
 	'url' => 'http://www.mediawiki.org/wiki/Extension:MobileDetect',

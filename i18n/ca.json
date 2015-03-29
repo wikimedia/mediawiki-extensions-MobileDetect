@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ssola"
+		]
+	},
+	"mobiledetect-desc": "Detecta els dispositius mòbils i permet controlar el contingut visible en cada cas amb les etiquetes &lt;nomobile&gt; i &lt;mobileonly&gt;"
+}

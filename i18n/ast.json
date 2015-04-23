@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Xuacu"
+		]
+	},
+	"mobiledetect-desc": "Detecta los preseos móviles y permite controlar el conteníu visible'n cada casu coles etiquetes &lt;nomobile&gt; y &lt;mobileonly&gt;"
+}

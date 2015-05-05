@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Elisardojm"
+		]
+	},
+	"mobiledetect-desc": "Detecta dispositivos móbiles e permite controlar o contido que é visible en cada caso coas etiquetas &lt;nomobile&gt; e &lt;mobileonly&gt;"
+}

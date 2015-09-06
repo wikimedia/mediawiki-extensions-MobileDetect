@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Red Winged Duck"
+		]
+	},
+	"mobiledetect-desc": "Вызначае мабільныя прылады і дазваляе кантраляваць бачны зьмест у кожным выпадку з дапамогай тэгаў &lt;nomobile&gt; і &lt;mobileonly&gt;"
+}

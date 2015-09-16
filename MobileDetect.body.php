@@ -2,6 +2,11 @@
 
 class MobileDetect {
 
+	public static function addModule( &$output ) {
+		$output->addModules( 'ext.MobileDetect' );
+		return true;
+	}
+
 	public static function setParserHook( &$parser ) {
 		$parser->setHook( 'nomobile', 'MobileDetect::nomobile' );
 		$parser->setHook( 'mobileonly', 'MobileDetect::mobileonly' );
@@ -9,17 +14,11 @@ class MobileDetect {
 	}
 
 	public static function nomobile( $input, array $args, Parser $parser, PPFrame $frame ) {
-		if ( self::isMobile() ) {
-			return '';
-		}
-		return $parser->recursiveTagParse( $input );
+		return '<div class="nomobile">' . $parser->recursiveTagParse( $input ) . '</div>';
 	}
 
 	public static function mobileonly( $input, array $args, Parser $parser, PPFrame $frame ) {
-		if ( self::isMobile() ) {
-			return $parser->recursiveTagParse( $input );
-		}
-		return '';
+		return '<div class="mobileonly">' . $parser->recursiveTagParse( $input ) . '</div>';
 	}
 
 	public static function isMobile() {

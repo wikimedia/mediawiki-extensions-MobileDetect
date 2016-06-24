@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"AmaryllisGardener"
+		]
+	},
+	"mobiledetect-desc": "Detects mobile devices an allaes tae control the content visible in each case wi the &lt;nomobile&gt; an &lt;mobileonly&gt; tags"
+}

@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"IRTC1015"
+			"IRTC1015",
+			"Ykhwong"
 		]
 	},
-	"mobiledetect-desc": "모바일 장치를 감지하여 &lt;nomobile&gt;와 &lt;mobileonly&gt; 태그로 보여질 내용을 제어할 수 있게 합니다"
+	"mobiledetect-desc": "모바일 장치를 감지하여 &lt;nomobile&gt;와 &lt;mobileonly&gt; 태그로 각각의 경우에 표시될 내용을 제어할 수 있게 합니다"
 }

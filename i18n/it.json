@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Selven"
+		]
+	},
+	"mobiledetect-desc": "Rileva i dispositivi mobili e consente di controllare i contenuti visibili in ogni caso con i tag &lt;nomobile&gt; e &lt;mobileonly&gt;"
+}

@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Woytecr"
+		]
+	},
+	"mobiledetect-desc": "Wykrywa urządzenia mobilne i pozwala na kontrolę widoczności treści w każdym przypadku z użyciem znaczników &lt;nomobile&gt; oraz &lt;mobileonly&gt;"
+}

@@ -6,7 +6,7 @@ $wgExtensionCredits['parserhook'][] = array(
 	'license-name' => 'GPL-2.0+',
 	'descriptionmsg' => 'mobiledetect-desc',
 	'author' => array( 'Matthew Tran', 'Luis Felipe Schenone' ),
-	'url' => 'http://www.mediawiki.org/wiki/Extension:MobileDetect',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:MobileDetect',
 );
 
 $wgExtensionMessagesFiles['MobileDetect'] = __DIR__ . '/MobileDetect.i18n.php';

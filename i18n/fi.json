@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Pyscowicz"
+		]
+	},
+	"mobiledetect-desc": "Tunnistaa mobiililaitteet ja mahdollistaa sisällön ohjaamisen kussakin tapauksessa &lt;nomobile&gt; ja &lt;mobileonly&gt; tunnisteilla"
+}

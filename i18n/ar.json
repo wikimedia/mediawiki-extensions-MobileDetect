@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mido"
+		]
+	},
+	"mobiledetect-desc": "يكتشف بيئات الأجهزة المحمولة ويتحكم في المحتوى المعروض مستخدما الوسوم &lt;nomobile&gt; و &lt;mobileonly&gt;"
+}

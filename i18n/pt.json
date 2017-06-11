@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fúlvio"
+			"Fúlvio",
+			"Hamilton Abreu"
 		]
 	},
-	"mobiledetect-desc": "Detecta dispositivos móveis e permite controlar o conteúdo visível em cada caso através das etiquetas &lt;nomobile&gt; e &lt;mobileonly&gt;"
+	"mobiledetect-desc": "Deteta dispositivos móveis e permite controlar o conteúdo visível em cada caso através das etiquetas &lt;nomobile&gt; e &lt;mobileonly&gt;"
 }

@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bencemac"
+		]
+	},
+	"mobiledetect-desc": "Mobileszközök felismerése és a tartalom szabályozásának lehetővé tétele a &lt;nomobile&gt; és &lt;mobileonly&gt; címkék segítségével."
+}

@@ -7,7 +7,7 @@ $wgExtensionCredits['parserhook'][] = [
 	'descriptionmsg' => 'mobiledetect-desc',
 	'author' => [
 		'Matthew Tran',
-		'[http://mediawiki.org/wiki/User:Sophivorus Felipe Schenone]'
+		'[https://mediawiki.org/wiki/User:Sophivorus Felipe Schenone]'
 	],
 	'url' => 'https://www.mediawiki.org/wiki/Extension:MobileDetect',
 ];

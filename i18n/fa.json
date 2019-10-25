@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alireza Ivaz"
+		]
+	},
+	"mobiledetect-desc": "دستگاه‌های تلفن همراه را ردیابی می‌کند و امکان کنترل محتوای قابل نمایش در هر مورد را با برچسب‌های &lt;nomobile&gt; و &lt;mobileonly&gt; را فراهم می‌کند."
+}

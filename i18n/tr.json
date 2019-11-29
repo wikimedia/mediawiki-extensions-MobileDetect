@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"BaRaN6161 TURK"
+		]
+	},
+	"mobiledetect-desc": "Mobil cihazları algılar ve her durumda görünen içeriği &lt;nomobile&gt; ve &lt;mobileonly&gt; etiketleriyle kontrol etmenize olanak sağlar"
+}

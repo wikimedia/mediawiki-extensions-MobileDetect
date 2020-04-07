@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Liuxinyu970226",
-			"Gaoxuewei"
+			"Gaoxuewei",
+			"Liuxinyu970226"
 		]
 	},
 	"mobiledetect-desc": "检测移动设备并允许使用 &lt;nomobile&gt; 和 &lt;mobileonly&gt; 标签控制在不同情况下的显示内容"

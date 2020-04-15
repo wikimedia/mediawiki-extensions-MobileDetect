@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Rail",
 			"Woytecr"
 		]
 	},
-	"mobiledetect-desc": "Wykrywa urządzenia mobilne i pozwala na kontrolę widoczności treści w każdym przypadku z użyciem znaczników &lt;nomobile&gt; oraz &lt;mobileonly&gt;"
+	"mobiledetect-desc": "Wykrywa urządzenia mobilne i pozwala na kontrolę widoczności treści w każdym przypadku z użyciem znaczników <code>&lt;nomobile&gt;</code> oraz <code>&lt;mobileonly&gt;</code>"
 }

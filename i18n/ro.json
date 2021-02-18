@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"NGC 54"
+		]
+	},
+	"mobiledetect-desc": "Detectează dispozitive mobile și permite controlarea conținutului vizibil în fiecare caz cu etichetele &lt;nomobile&gt; și &lt;mobileonly&gt;"
+}

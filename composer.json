@@ -1,16 +1,37 @@
 {
+	"name": "mediawiki/mobile-detect",
+	"type": "mediawiki-extension",
+	"description": "Detects mobile devices and allows to control the content visible in each case with the <nomobile> and <mobileonly> tags.",
+	"keywords": [
+		"MediaWiki",
+		"MobileDetect"
+	],
+	"homepage": "https://www.mediawiki.org/wiki/Extension:MobileDetect",
+	"license": "GPL-3.0-only",
 	"require-dev": {
+		"mediawiki/mediawiki-codesniffer": "39.0.0",
 		"mediawiki/minus-x": "1.1.1",
 		"php-parallel-lint/php-console-highlighter": "1.0.0",
 		"php-parallel-lint/php-parallel-lint": "1.3.2"
 	},
+	"autoload": {
+		"psr-4": {
+			"MediaWiki\\Extension\\MobileDetect\\": "src/"
+		},
+		"files": [
+			"lib/MobileDetect.php"
+		]
+	},
 	"scripts": {
 		"test": [
 			"parallel-lint . --exclude vendor --exclude node_modules",
-			"minus-x check ."
+			"minus-x check .",
+			"@phpcs"
 		],
 		"fix": [
-			"minus-x fix ."
-		]
+			"minus-x fix .",
+			"phpcbf"
+		],
+		"phpcs": "phpcs -sp --cache"
 	}
 }

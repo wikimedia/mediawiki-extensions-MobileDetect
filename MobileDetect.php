@@ -1,45 +1,16 @@
 <?php
 
-$wgExtensionCredits['parserhook'][] = [
-	'path' => __FILE__,
-	'name' => 'MobileDetect',
-	'version' => '2.1',
-	'license-name' => 'GPL-3.0-only',
-	'descriptionmsg' => 'mobiledetect-desc',
-	'author' => [
-		'Matthew Tran',
-		'[https://mediawiki.org/wiki/User:Sophivorus Felipe Schenone]'
-	],
-	'url' => 'https://www.mediawiki.org/wiki/Extension:MobileDetect',
-];
+if ( function_exists( 'wfLoadExtension' ) ) {
+	wfLoadExtension( 'MobileDetect' );
+	// Keep i18n globals so mergeMessageFileList.php doesn't break
+	$wgMessagesDirs['MobileDetect'] = __DIR__ . '/i18n';
+	wfWarn(
+		'Deprecated PHP entry point used for the MobileDetect extension. ' .
+		'Please use wfLoadExtension() instead, ' .
+		'see https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Extension_registration for more details.'
+	);
 
-$wgMessagesDirs['MobileDetect'] = __DIR__ . '/i18n';
-
-$wgAutoloadClasses['MobileDetect'] = __DIR__ . '/MobileDetect.body.php';
-
-$wgHooks['BeforePageDisplay'][] = 'MobileDetect::addModule';
-$wgHooks['ParserFirstCallInit'][] = 'MobileDetect::setParserHook';
-
-$wgResourceModules['ext.MobileDetect.mobileonly'] = [
-	'styles' => 'MobileDetect.mobileonly.css',
-	'localBasePath' => __DIR__,
-	'remoteExtPath' => 'MobileDetect',
-];
-
-$wgResourceModules['ext.MobileDetect.nomobile'] = [
-	'styles' => 'MobileDetect.nomobile.css',
-	'localBasePath' => __DIR__,
-	'remoteExtPath' => 'MobileDetect',
-];
-
-/**
- * Backwards compatibility
- * When updating to extension registration (extension.json)
- * this function cannot be defined in such a way
- * that it can be used in LocalSettings.php
- * because of this limitation
- * we still use the old registration method :-(
- */
-function mobiledetect() {
-	return MobileDetect::isMobile();
+	return;
+} else {
+	die( 'This version of the MobileDetect extension requires MediaWiki 1.35+' );
 }

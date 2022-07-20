@@ -1,0 +1,51 @@
+{
+	"name": "MobileDetect",
+	"version": "2.2",
+	"author": [
+		"Matthew Tran",
+		"[https://mediawiki.org/wiki/User:Sophivorus Felipe Schenone]",
+		"Universal Omega"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:MobileDetect",
+	"descriptionmsg": "mobiledetect-desc",
+	"license-name": "GPL-3.0-only",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"MessagesDirs": {
+		"MobileDetect": [
+			"i18n"
+		]
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\MobileDetect\\": "src/"
+	},
+	"ResourceModules": {
+		"ext.MobileDetect.mobileonly": {
+			"styles": "modules/mobileonly.css"
+		},
+		"ext.MobileDetect.nomobile": {
+			"styles": "modules/nomobile.css"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "MobileDetect"
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "MediaWiki\\Extension\\MobileDetect\\Hooks"
+		}
+	},
+	"Hooks": {
+		"BeforePageDisplay": {
+			"handler": "main"
+		},
+		"ParserFirstCallInit": {
+			"handler": "main"
+		}
+	},
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}

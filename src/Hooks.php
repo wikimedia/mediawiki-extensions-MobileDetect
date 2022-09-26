@@ -29,30 +29,21 @@ class Hooks implements
 	 * @param Parser $parser
 	 */
 	public function onParserFirstCallInit( $parser ) {
-		$parser->setHook( 'mobileonly', [ __CLASS__, 'mobileonly' ] );
-		$parser->setHook( 'nomobile', [ __CLASS__, 'nomobile' ] );
-	}
+		$parser->setHook( 'mobileonly', static function ( $input, array $args, Parser $parser, PPFrame $frame ) {
+			return '<span class="mobileonly">' . $parser->recursiveTagParse( $input ) . '</span>';
+		} );
 
-	/**
-	 * @param string $input
-	 * @param array $args
-	 * @param Parser $parser
-	 * @param PPFrame $frame
-	 * @return string
-	 */
-	public static function nomobile( $input, array $args, Parser $parser, PPFrame $frame ) {
-		return '<span class="nomobile">' . $parser->recursiveTagParse( $input ) . '</span>';
-	}
+		$parser->setHook( 'nomobile', static function ( $input, array $args, Parser $parser, PPFrame $frame ) {
+			return '<span class="nomobile">' . $parser->recursiveTagParse( $input ) . '</span>';
+		} );
 
-	/**
-	 * @param string $input
-	 * @param array $args
-	 * @param Parser $parser
-	 * @param PPFrame $frame
-	 * @return string
-	 */
-	public static function mobileonly( $input, array $args, Parser $parser, PPFrame $frame ) {
-		return '<span class="mobileonly">' . $parser->recursiveTagParse( $input ) . '</span>';
+		$parser->setFunctionHook( 'mobileonly', static function ( Parser $parser, $input = '' ) {
+			return '<span class="mobileonly">' . $parser->recursiveTagParse( $input ) . '</span>';
+		} );
+
+		$parser->setFunctionHook( 'nomobile', static function ( Parser $parser, $input = '' ) {
+			return '<span class="nomobile">' . $parser->recursiveTagParse( $input ) . '</span>';
+		} );
 	}
 
 	/**

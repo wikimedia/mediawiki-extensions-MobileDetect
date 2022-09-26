@@ -1,6 +1,6 @@
 {
 	"name": "MobileDetect",
-	"version": "2.3",
+	"version": "2.4",
 	"author": [
 		"Matthew Tran",
 		"[https://mediawiki.org/wiki/User:Sophivorus Sophivorus]",
@@ -17,6 +17,9 @@
 		"MobileDetect": [
 			"i18n"
 		]
+	},
+	"ExtensionMessagesFiles": {
+		"MobileDetectMagic": "MobileDetect.i18n.magic.php"
 	},
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extension\\MobileDetect\\": "src/"

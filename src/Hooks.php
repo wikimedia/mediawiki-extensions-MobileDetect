@@ -41,7 +41,7 @@ class Hooks implements
 	 * @return string
 	 */
 	public static function nomobile( $input, array $args, Parser $parser, PPFrame $frame ) {
-		return '<div class="nomobile">' . $parser->recursiveTagParse( $input ) . '</div>';
+		return '<span class="nomobile">' . $parser->recursiveTagParse( $input ) . '</span>';
 	}
 
 	/**
@@ -52,7 +52,7 @@ class Hooks implements
 	 * @return string
 	 */
 	public static function mobileonly( $input, array $args, Parser $parser, PPFrame $frame ) {
-		return '<div class="mobileonly">' . $parser->recursiveTagParse( $input ) . '</div>';
+		return '<span class="mobileonly">' . $parser->recursiveTagParse( $input ) . '</span>';
 	}
 
 	/**

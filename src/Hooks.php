@@ -19,8 +19,10 @@ class Hooks implements
 	 */
 	public function onBeforePageDisplay( $out, $skin ): void {
 		if ( self::isMobile() ) {
+			$out->addJsConfigVars( 'wgIsMobile', true );
 			$out->addModuleStyles( [ 'ext.MobileDetect.mobileonly' ] );
 		} else {
+			$out->addJsConfigVars( 'wgIsMobile', false );
 			$out->addModuleStyles( [ 'ext.MobileDetect.nomobile' ] );
 		}
 	}

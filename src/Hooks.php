@@ -46,6 +46,20 @@ class Hooks implements
 		$parser->setFunctionHook( 'nomobile', static function ( Parser $parser, $input = '' ) {
 			return '<span class="nomobile">' . $parser->recursiveTagParse( $input ) . '</span>';
 		} );
+
+		$parser->setHook( 'onlymobile', static function ( $input, array $args, Parser $parser, PPFrame $frame ) {
+			if ( self::isMobile() ) {
+				return $parser->recursiveTagParse( $input );
+			}
+			return '';
+		} );
+
+		$parser->setFunctionHook( 'onlymobile', static function ( Parser $parser, $input = '' ) {
+			if ( self::isMobile() ) {
+				return $parser->recursiveTagParse( $input );
+			}
+			return '';
+		} );
 	}
 
 	/**

@@ -16,5 +16,6 @@ $magicWords = [];
  */
 $magicWords['en'] = [
 	'nomobile' => [ 0, 'nomobile' ],
-	'mobileonly' => [ 0, 'mobileonly' ]
+	'mobileonly' => [ 0, 'mobileonly' ],
+	'onlymobile' => [ 0, 'onlymobile' ]
 ];

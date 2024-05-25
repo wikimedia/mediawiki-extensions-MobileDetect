@@ -14,6 +14,16 @@ class Hooks implements
 	ParserFirstCallInitHook
 {
 	/**
+	 * Extension registration callback, see extension.json.
+	 * This makes the global wfMobileDetect() function usable again.
+	 *
+	 * @see https://phabricator.wikimedia.org/T365912
+	 */
+	public static function onRegistration() {
+		require_once __DIR__ . '/../lib/MobileDetect.php';
+	}
+
+	/**
 	 * @param OutputPage $out
 	 * @param Skin $skin
 	 */

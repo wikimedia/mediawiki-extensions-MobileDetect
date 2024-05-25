@@ -8,6 +8,7 @@
 	],
 	"url": "https://www.mediawiki.org/wiki/Extension:MobileDetect",
 	"descriptionmsg": "mobiledetect-desc",
+	"callback": "MediaWiki\\Extension\\MobileDetect\\Hooks::onRegistration",
 	"license-name": "GPL-3.0-only",
 	"type": "parserhook",
 	"requires": {
